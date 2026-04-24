@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مرحلة ثانية</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+      background: #222;
+      color: white;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>تحسب خلصنا؟</h2>
+
+<p>وش الشيء الي انا أزيفه<br>
+ملاحظة:(الجواب بالأنجليزي)</p>
+
+<input type="text" id="answer">
+<br><br>
+<button onclick="checkAnswer()">تحقق</button>
+
+<script>
+function checkAnswer() {
+  let answer = document.getElementById("answer").value.toLowerCase();
+
+  if (answer.includes("smile")) {
+    window.location.href = "page3.html";
+  } else {
+    alert("غلط");
+  }
+}
+</script>
+
+</body>
+</html>

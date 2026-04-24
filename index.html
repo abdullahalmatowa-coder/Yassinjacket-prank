@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تحقق</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+      background: #111;
+      color: white;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>مبدئيا يفضل تكمل من اللاب توب او الايباد،<br>
+عشان تثبت انك ياسين</h2>
+
+<p>If I’m Deku then you’re?<br>
+ملاحظة:(الاجابة بالأنجليزي)</p>
+
+<input type="text" id="answer">
+<br><br>
+<button onclick="checkAnswer()">تحقق</button>
+
+<script>
+function checkAnswer() {
+  let answer = document.getElementById("answer").value.toLowerCase();
+
+  if (answer === "katchan") {
+    window.location.href = "page2.html";
+  } else {
+    alert("غلط");
+  }
+}
+</script>
+
+</body>
+</html>
